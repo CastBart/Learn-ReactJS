@@ -6,39 +6,19 @@ const FormExpense = (props) => {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
   const [date, setDate] = useState("");
-  //   const [userInput, setUserInput] = useState({
-  //   title: "",
-  //   amount: "",
-  //   date: "",
-  // });
 
   const titleHandler = (event) => {
     setTitle(event.target.value);
   };
-  // const titleHandler = (event) => {
-  //   setUserInput({
-  //     ...userInput,
-  //     title: event.target.value,
-  //   });
-  // };
+
   const amountHandler = (event) => {
     setAmount(event.target.value);
   };
-  // const amountHandler = (event) => {
-  //   setUserInput({
-  //     ...userInput,
-  //     amount: event.target.value,
-  //   });
-  // };
+
   const dateHandler = (event) => {
     setDate(event.target.value);
   };
-  // const dateHandler = (event) => {
-  //   setUserInput({
-  //     ...userInput,
-  //     date: event.target.value,
-  //   });
-  // };
+
   const submitHandler = (event) => {
     event.preventDefault();
     console.log("Submit pressed");
