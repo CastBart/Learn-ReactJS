@@ -16,7 +16,7 @@ function App() {
       amount: 294.67,
       date: new Date(2021, 2, 28),
     },
-    {         
+    {
       id: "e4",
       title: "New Desk (Wooden)",
       amount: 450,
@@ -24,10 +24,15 @@ function App() {
     },
   ];
 
+  const addNewExpense = (expense) => {
+    console.log("App.js");
+    console.log(expense);
+  };
+
   return (
     <div>
-      <NewExpense />
-      <Expenses expenses={expenses}/>
+      <NewExpense onAddNewExpense={addNewExpense} />
+      <Expenses expenses={expenses} />
     </div>
   );
 }
