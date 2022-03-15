@@ -21,7 +21,6 @@ const FormExpense = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log("Submit pressed");
     const data = {
       title: title,
       amount: amount,
